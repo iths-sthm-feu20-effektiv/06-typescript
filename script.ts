@@ -33,6 +33,12 @@ function f1(param1: string): void {
 	console.log(param1);
 }
 
+function f2(param1: string = 'hej') {
+
+}
+f2()
+f2('hej')
+
 function add(x: number, y: number): number {
 	return x + y
 	// "1" + 2    <- Vad blir detta?
@@ -45,6 +51,20 @@ function add(x: number, y: number): number {
 let answer: number = add(1, 2);
 console.log('Answer: ' + answer);
 
+interface Product {
+	name: string,
+	value: number | null,
+	price: number,
+	id: string
+}
+
+function maybeGetObject(): null | Product {
+	if( Math.random() < 0.5 ) {
+		return { name: 'example', value: 156, price: 200, id: '123' }
+	} else {
+		return null;
+	}
+}
 
 
 
