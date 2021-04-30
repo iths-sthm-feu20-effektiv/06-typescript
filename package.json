@@ -1,0 +1,17 @@
+{
+  "name": "06-typescript",
+  "version": "1.0.0",
+  "description": "TypeScript example",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "David Andersson",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
